@@ -2,7 +2,7 @@
 * @Author: XIEXIAN  
 * @Date: 2019-06-26 14:56:47  
  * @Last Modified by: XIEXIAN
- * @Last Modified time: 2019-06-26 16:43:40
+ * @Last Modified time: 2019-06-26 17:45:58
 */
 using System.Collections.Generic;
 using System;
@@ -24,6 +24,7 @@ namespace LeetCodeExercises
         */
 
         //想到解法一：更出所有三个元素的组合，再找出和为o的组和，加上
+        //这个解法，后续复习加上
         public IList<IList<int>> ThreeSum01(int[] nums) {
 
             return null;
