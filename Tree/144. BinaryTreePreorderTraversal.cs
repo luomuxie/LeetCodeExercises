@@ -2,7 +2,7 @@
 * @Author: XIEXIAN  
 * @Date: 2019-06-28 16:29:28  
  * @Last Modified by: XIEXIAN
- * @Last Modified time: 2019-06-28 16:30:15
+ * @Last Modified time: 2019-07-01 18:08:17
 */
 using System.Collections.Generic;
 namespace LeetCodeExercises
@@ -21,20 +21,23 @@ namespace LeetCodeExercises
   */
     public class BinaryTreePreorderTraversal
     {
-        IList<int> res0 = new List<int>();
+        
         
         //解法一：递归280 ms	27.8 MB	很慢啊
         public IList<int> PreorderTraversal01(TreeNode root) {
-            if(root == null) return res0;      
-            TreePreOrder(root);
-            return res0;
+            IList<int> res = new List<int>();
+            if(root == null) return res;      
+            TreePreOrder( res,root);
+            return res;
         }
 
-        private void TreePreOrder(TreeNode node)
+        private void TreePreOrder(IList<int> res,TreeNode node)
         {
-            if(node.left != null) TreePreOrder(node.left);
-            if(node.right != null) TreePreOrder(node.right);
-            res0.Add(node.val);            
+            if(node == null) return;
+            res.Add(node.val);  
+            TreePreOrder(res, node.left);
+            TreePreOrder( res,node.right);
+                      
         }
 
         //解法二：while迭代 252 ms	28.2  只是比一快一丢丢
