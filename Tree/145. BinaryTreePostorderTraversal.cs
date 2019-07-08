@@ -2,7 +2,7 @@
 * @Author: XIEXIAN  
 * @Date: 2019-07-02 11:20:54  
  * @Last Modified by: XIEXIAN
- * @Last Modified time: 2019-07-02 11:22:05
+ * @Last Modified time: 2019-07-04 20:29:01
 */
 using System.Collections.Generic;
 namespace LeetCodeExercises
@@ -13,7 +13,7 @@ namespace LeetCodeExercises
         public IList<int> PostorderTraversal01(TreeNode root) {
             IList<int> res = new List<int>();
             if (root == null) return res;
-            Postorder(res,root);            
+            Postorder(res,root);                        
             return res;
         }
 
