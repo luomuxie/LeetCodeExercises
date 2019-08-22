@@ -17,7 +17,7 @@ namespace LeetCodeExercises
                 if(vo.node.left == null && vo.node.right == null)
                 {
                     if(vo.sum == sum) return true;
-                }                
+                }
                 if(vo.node.left != null) stack.Push(new PathSumVo(vo.node.left,vo.sum+vo.node.left.val));
                 if(vo.node.right != null) stack.Push(new PathSumVo(vo.node.right,vo.sum+vo.node.right.val));
 

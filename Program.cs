@@ -8,8 +8,10 @@ namespace LeetCodeExercises
         {
             Console.WriteLine("Hello World!");
             //Console.WriteLine(new AddDigits().addDigits01(38));
-            
-            
+            //Console.WriteLine(new Sqrt().MySqrt02(8));
+            //Console.WriteLine(new Pow().MyPow02(2,4));
+            //Console.WriteLine(new CountPrimes().CountPrimes02(10));
+            Console.WriteLine(new TwoSumII().TwoSum01(new int[]{1,2,7,11,15},9));
         }
         /*
             关于二进制运算：
