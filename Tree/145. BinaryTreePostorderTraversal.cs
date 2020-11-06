@@ -16,8 +16,7 @@ namespace LeetCodeExercises
             Postorder(res,root);                        
             return res;
         }
-
-        private void Postorder(IList<int> res,TreeNode node)
+         private void Postorder(IList<int> res,TreeNode node)
         {
             if(node == null) return;
             Postorder(res,node.left);            

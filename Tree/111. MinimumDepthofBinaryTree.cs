@@ -82,6 +82,5 @@ namespace LeetCodeExercises{
             this.deep = deep;
             this.node = node;
         }
-
     }
 }
